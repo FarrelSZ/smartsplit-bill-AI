@@ -1,0 +1,6 @@
+[server]
+# Disable the Python file watcher. It probes every lazily-imported
+# transformers submodule and floods the terminal with non-fatal
+# "ModuleNotFoundError: No module named 'torchvision'" tracebacks
+# whenever the Donut model is loaded.
+fileWatcherType = "none"
